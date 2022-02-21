@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- css -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- js library -->
+        <script src="./lib/rquery.js"></script>
+        <script src="./lib/localStorage.js"></script>
+        <title>Bazar Memo</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h3 class="welcome">Welcome to</h3>
+                <h1 class="title">Bazar Memo</h1>
+            </header>
+            <div class="memo">
+                <!-- memo will apear here -->
+                <table class="memo-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Unit</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+                        <!-- <tr>
+                        <td>alu</td>
+                        <td>5 kg</td>
+                        <td>112</td>
+                    </tr> -->
+                    </tbody>
+                </table>
+                <button class="clear-memo">Clear Memo</button>
+            </div>
+            <div class="memo-list">
+                <!-- all listed items -->
+            </div>
+            <div class="input-box d-none">
+                <!-- display -->
+                <input type="text" class="display" readonly />
+                <!-- custom keyboard -->
+                <div class="keyboard">
+                    <div class="key num">1</div>
+                    <div class="key num">2</div>
+                    <div class="key num">3</div>
+                    <div class="key num">4</div>
+                    <div class="key num">5</div>
+                    <div class="key num">6</div>
+                    <div class="key num">7</div>
+                    <div class="key num">8</div>
+                    <div class="key num">9</div>
+                    <div class="key delete">
+                        <!-- <img src="./image/delete-left-solid.svg" alt="Del" /> -->
+                        <i class="fa-solid fa-delete-left"></i>
+                    </div>
+                    <div class="key num">0</div>
+                    <div class="key submit">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- add button -->
+            <div class="add-section">
+                <button class="add-button">+</button>
+            </div>
+            <div class="d-none memo-option">
+                <ul class="memo-items">
+                    <!-- <li>alu</li>
+                    <li>alu</li>
+                    <li>alu</li> -->
+                </ul>
+            </div>
+        </div>
+        <script src="./helpers/renderMemo.js"></script>
+        <script src="./js/app.js"></script>
+    </body>
+</html>

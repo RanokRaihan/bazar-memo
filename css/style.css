@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/* global style */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:focus {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #2b3243;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* position: fixed; */
+    left: 0;
+    top: 0;
+    /* padding-bottom: 30px; */
+}
+.container {
+    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
+    background-color: #232937;
+    padding: 10px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    padding-bottom: 30px;
+}
+header {
+    text-align: center;
+    margin-top: 35px;
+}
+.welcome {
+    color: #31ae84;
+    font-weight: 400;
+}
+.title {
+    color: #27e8a7;
+    font-weight: 400;
+}
+/* memo table */
+.memo {
+    display: none;
+}
+.memo-table {
+    width: 100%;
+    color: #e4f0fc;
+}
+.memo-table td,
+.memo-table th {
+    text-align: center;
+    /* border: 1px solid #fff; */
+    padding: 10px;
+    font-size: 18px;
+}
+td:first-child,
+th:first-child {
+    text-align: left;
+    width: 40%;
+}
+td:last-child,
+th:last-child {
+    text-align: right;
+    width: 35%;
+}
+
+.clear-memo {
+    cursor: pointer;
+    background: #f72642;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+}
+.input-box {
+    width: 55%;
+    min-width: 150px;
+    max-width: 300px;
+    min-height: 300px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #516377;
+    border-radius: 15px;
+    padding: 20px;
+    z-index: 999;
+}
+.display {
+    background: #31ae84;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+::placeholder {
+    color: #ccc;
+}
+/* raf */
+.keyboard {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.key {
+    cursor: pointer;
+    background: #7290aa;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.add-button {
+    font-size: 30px;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: #31ae84;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+}
+.submit {
+    background: #05c55b;
+}
+.clear {
+    grid-column: span 2;
+    background: yellow;
+}
+.delete {
+    background: #f72642;
+}
+.memo-option {
+    width: 40%;
+    min-width: 150px;
+    max-width: 300px;
+    height: 300px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #516377;
+    border-radius: 15px;
+    z-index: 500;
+
+    overflow-y: auto;
+    font-size: 20px;
+}
+.memo-option ul {
+    list-style-type: none;
+    color: #fff;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.memo-option::-webkit-scrollbar {
+    display: none;
+}
+.memo-option ul li {
+    padding: 5px 20px;
+    cursor: pointer;
+}
+.memo-option ul li:nth-child(2n) {
+    background-color: #576a80;
+}
+.d-none {
+    display: none;
+}
