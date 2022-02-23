@@ -1,0 +1,56 @@
+<!-- setting page -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/setting.css" />
+        <!-- script -->
+        <script src="../lib/rquery.js"></script>
+        <script src="../lib/localStorage.js"></script>
+        <title>setting</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1 class="setting-header">Configur your app</h1>
+            </header>
+            <div class="alignment">
+                <p class="alignment-text">Keyboard alignment</p>
+                <button
+                    class="align-button left-button active"
+                    data-align="left"
+                >
+                    Left
+                </button>
+                <button class="align-button right-button" data-align="right">
+                    Right
+                </button>
+            </div>
+            <div class="add-section">
+                <input type="text" class="add-input" />
+                <button class="add-new-button btn">Add</button>
+            </div>
+            <div class="all-list-items">
+                <!-- <div class="single-list-item">
+                    <p class="list-item">Something</p>
+                    <button class="delete-item">D</button>
+                </div> -->
+            </div>
+            <div class="config-list">
+                <button class="reset-list btn">Reset</button>
+                <button class="clear-list btn">Clear</button>
+            </div>
+        </div>
+
+        <!-- scripts -->
+        <script src="../helpers/helper.js"></script>
+        <script src="../js/setting.js"></script>
+    </body>
+</html>

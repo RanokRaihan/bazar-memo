@@ -2,21 +2,13 @@
 if (!localStorage.getItem("memo")) {
     localStorage.setItem("memo", "[]");
 }
+
 // initial render of list
 renderMemo();
 
 //import dom
-const numKey = document.querySelectorAll(".num");
-const display = $(".display");
-const inputBox = $(".input-box");
-const addButton = $(".add-button");
-const memoItems = $(".memo-items");
+// import json
 
-// init of list object
-let singleItem = {
-    title: "",
-    price: "",
-};
 const items = [
     "আলু",
     "মরিচ",
@@ -39,6 +31,21 @@ const items = [
     "মুরগি",
     "গরুর মাংস",
 ];
+if (!localStorage.getItem("all-item")) {
+    localStorage.setItem("all-item", JSON.stringify(items));
+}
+const numKey = document.querySelectorAll(".num");
+const display = $(".display");
+const inputBox = $(".input-box");
+const addButton = $(".add-button");
+const memoItems = $(".memo-items");
+
+// init of list object
+let singleItem = {
+    title: "",
+    price: "",
+};
+
 numKey.forEach((key) => {
     key.addEventListener("click", (e) => {
         const num = e.target.innerText;
@@ -85,7 +92,8 @@ $(".container").addEventListener("click", (e) => {
 $(".add-button").addEventListener("click", (event) => {
     addButton.style.display = "none";
     memoItems.innerHTML = "";
-    items.forEach((item) => {
+    const itemFromlocal = fetchLocal("all-item");
+    itemFromlocal.forEach((item) => {
         const LI = document.createElement("LI");
         LI.setAttribute("class", "memo-item");
         LI.setAttribute("onclick", "selectItem(event)");
