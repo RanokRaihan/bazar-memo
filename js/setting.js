@@ -69,5 +69,6 @@ $(".add-new-button").addEventListener("click", () => {
 });
 
 $(".home").addEventListener("click", () => {
-  window.location.href = "/";
+  const newURL = window.location.href.split("setting")[0];
+  window.location.replace(newURL);
 });
