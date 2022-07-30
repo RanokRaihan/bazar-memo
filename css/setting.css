@@ -1,113 +1,117 @@
 .setting-header {
-    color: #fff;
-    font-weight: 400;
+  color: #fff;
+  font-weight: 400;
 }
 
 .alignment {
-    display: flex;
-    flex-direction: row;
-    width: 70%;
-    margin: 20px auto;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin: 20px auto;
+  align-items: center;
 }
 .alignment-text {
-    color: #fff;
-    flex-grow: 1;
+  color: #fff;
+  flex-grow: 1;
 }
 .align-button {
-    padding: 5px 12px;
-    font-size: 16px;
-    border: 1px solid #31ae84;
-    background: none;
-    border-radius: 10px;
-    color: #31ae84;
-    margin: 0 5px;
+  padding: 5px 12px;
+  font-size: 16px;
+  border: 1px solid #31ae84;
+  background: none;
+  border-radius: 10px;
+  color: #31ae84;
+  margin: 0 5px;
+}
+.btn {
+  padding: 10px 12px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  border-radius: 10px;
+  color: #fff;
+  margin: 0 5px;
 }
 .active {
-    color: #fff;
-    background: #31ae84;
+  color: #fff;
+  background: #31ae84;
 }
 
 /* add section */
 .add-section {
-    display: flex;
-    width: 70%;
-    margin: 0 auto;
-    overflow: hidden;
-    align-items: center;
-    justify-content: stretch;
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+  align-items: center;
+  justify-content: stretch;
 }
 .add-input {
-    padding: 10px;
-    border: 1px solid #31ae84;
-    border-radius: 10px 0 0 10px;
-    background: none;
-    color: #fff;
-    font-size: 16px;
-    max-width: 70%;
+  padding: 10px;
+  border: 1px solid #31ae84;
+  border-radius: 10px 0 0 10px;
+  background: none;
+  color: #fff;
+  font-size: 16px;
+  max-width: 70%;
 }
 .add-new-button {
-    padding: 10px;
-    border: 1px solid #31ae84;
-    border-radius: 0 10px 10px 0;
-    background: #31ae84;
-    color: #fff;
-    font-size: 16px;
-    flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #31ae84;
+  border-radius: 0 10px 10px 0;
+  background: #31ae84;
+  color: #fff;
+  font-size: 16px;
+  flex-grow: 1;
+  margin: 0;
 }
 
 /* list */
 .fa-trash {
-    pointer-events: none;
+  pointer-events: none;
 }
 .all-list-items {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 .single-list-item {
-    display: flex;
-    align-items: center;
-    width: 80%;
-    margin: 8px auto;
-    padding: 5px;
-    justify-content: space-between;
-    font-size: 18px;
-    color: #31ae84;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 8px auto;
+  padding: 5px;
+  justify-content: space-between;
+  font-size: 18px;
+  color: #31ae84;
 }
 .delete-item {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgb(247, 20, 20);
-    border: none;
-    color: #fff;
-    font-size: 18px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(247, 20, 20);
+  border: none;
+  color: #fff;
+  font-size: 18px;
 }
 .config-list {
-    position: fixed;
-    bottom: 0px;
-    left: 0;
-    padding: 8px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background: red; */
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  padding: 8px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: red; */
 
-    background: #232937;
+  background: #232937;
 }
-.reset-list,
-.clear-list {
-    padding: 10px 12px;
-    font-size: 16px;
-    border: none;
-    background: none;
-    border-radius: 10px;
-    color: #fff;
-    margin: 0 5px;
-}
+
 .reset-list {
-    background: rgb(187, 187, 32);
+  background: rgb(187, 187, 32);
 }
 .clear-list {
-    background: red;
+  background: red;
+}
+.home {
+  background-color: #31ae84;
 }
