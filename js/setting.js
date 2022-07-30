@@ -68,5 +68,5 @@ $(".add-new-button").addEventListener("click", () => {
 });
 
 $(".home").addEventListener("click", () => {
-  window.history.back();
+  window.location.href = "/";
 });
