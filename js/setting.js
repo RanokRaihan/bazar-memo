@@ -64,6 +64,7 @@ $(".add-new-button").addEventListener("click", () => {
   const newItem = $(".add-input").value;
   updateLocal("all-item", newItem);
   $(".add-input").value = "";
+  $(".add-input").focus();
   renderAllItem();
 });
 
